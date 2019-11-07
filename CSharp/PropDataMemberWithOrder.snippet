@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>propdm</Title>
+			<Shortcut>propdm</Shortcut>
+			<Description>Code snippet for property with DataMember Attribute</Description>
+			<Author>Lokki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>order</ID>
+					<ToolTip>Order</ToolTip>
+					<Default>order</Default>
+				</Literal>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+			[DataMember(Order = $order$)]
+			public $type$ $property$ { get; set; }$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

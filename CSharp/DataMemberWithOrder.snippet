@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>dmo</Title>
+			<Shortcut>dmo</Shortcut>
+			<Description>Code snippet for DataMember Attribute with order</Description>
+			<Author>Lokki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>order</ID>
+					<ToolTip>Order</ToolTip>
+					<Default>order</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[[DataMember(Order = $order$)]$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
